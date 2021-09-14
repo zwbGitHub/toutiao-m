@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- 取消请求时发送referrer，可以让第三方验证时无法判断你的访问referrer，而以为请求者的你为内部请求，故而会反馈数据给你 -->
+    <meta name="referrer" content="no-referrer"> 
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
