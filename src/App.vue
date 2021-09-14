@@ -1,17 +1,23 @@
 <template>
   <div id="app">
-    <h1>今日头条</h1>
-    <router-link>Home</router-link> |
-    <router-view />
+    <keep-alive :include="layout">
+    <router-view></router-view>
+    </keep-alive>
   </div>
 </template>
-
+<script>
+import { mapState } from 'vuex';
+export default {
+  computed:{
+    ...mapState(['layout'])
+  }
+};
+</script>
 <style lang="less">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
 }
 </style>
