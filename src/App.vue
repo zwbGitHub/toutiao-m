@@ -1,17 +1,17 @@
 <template>
   <div id="app">
     <keep-alive :include="layout">
-    <router-view></router-view>
+      <router-view></router-view>
     </keep-alive>
   </div>
 </template>
 <script>
-import { mapState } from 'vuex';
+import { mapState } from 'vuex'
 export default {
-  computed:{
+  computed: {
     ...mapState(['layout'])
   }
-};
+}
 </script>
 <style lang="less">
 #app {

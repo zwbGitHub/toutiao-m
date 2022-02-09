@@ -13,7 +13,7 @@
       </template>
     </van-nav-bar>
     <!-- 导航栏 -->
-    <van-tabs v-model="active"  class="channel-tabs">
+    <van-tabs v-model="active" class="channel-tabs">
       <van-tab
         class="channel-tabs-item"
         v-for="channel in userChannels"
@@ -93,7 +93,7 @@ export default {
   /deep/ .van-nav-bar__title {
     max-width: none;
   }
- /*  .app-nav-bar {
+  /*  .app-nav-bar {
     position: fixed;
     top: 0;
     left: 0;

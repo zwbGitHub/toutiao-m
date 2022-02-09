@@ -16,6 +16,6 @@ dayjs.extend(relativeTime)
 // console.log(dayjs('2021-9-1 15:30:32').from(dayjs())); // 输出具体几天前
 
 // 将相对时间封装为过滤器
-Vue.filter('relativeTime',time =>{
-    return dayjs(time).from(dayjs())
+Vue.filter('relativeTime', time => {
+  return dayjs(time).from(dayjs())
 })

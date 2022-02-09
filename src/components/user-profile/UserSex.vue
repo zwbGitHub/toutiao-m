@@ -12,7 +12,7 @@
 
 <script>
 import { changeUserData } from '@/api/user.js'
-import {Toast } from 'vant'
+import { Toast } from 'vant'
 export default {
   data() {
     return {

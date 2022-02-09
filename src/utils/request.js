@@ -4,10 +4,11 @@ import axios from 'axios'
 import JSONBig from 'json-bigint'
 import { Toast } from 'vant'
 import router from '@/router/'
-// 配置根路径
 // 引入vuex
 import store from '@/store/index.js'
+
 const request = axios.create({
+  // 配置根路径
   baseURL: 'http://ttapi.research.itcast.cn/',
   // `transformResponse` 在传递给 then/catch 前，允许修改响应数据
   // 此处使用JSON-bigint 对JSON.parse(),无法转化为正确数值的字符串转化为正确字符串
@@ -69,9 +70,9 @@ request.interceptors.response.use(
       } catch (err) {
         // 设置跳转登录页面返回时的地址
         return router.replace({
-          path:'/login',
-          query:{
-            redirect:router.currentRoute.fullPath
+          path: '/login',
+          query: {
+            redirect: router.currentRoute.fullPath
           }
         })
       }
@@ -81,7 +82,7 @@ request.interceptors.response.use(
       Toast.fail('网络不好了呀兄弟')
     } else if (status >= 500) {
       Toast.fail('服务器出问题了呀兄弟')
-    } 
+    }
     console.log('错了呀兄弟')
     return Promise.reject(error)
   }

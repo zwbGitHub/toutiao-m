@@ -20,16 +20,16 @@ export const getResults = value => {
 }
 // 获取用户搜索历史
 export const getSearchHistory = () => {
-    return request({
-      method: 'get',
-      url: '/app/v1_0/search/histories',
-    })
-  }
+  return request({
+    method: 'get',
+    url: '/app/v1_0/search/histories'
+  })
+}
 // 删除用户搜索历史
 export const delSearchHistory = value => {
-    return request({
-      method: 'DELETE',
-      url: '/app/v1_0/search/histories',
-      params: value
-    })
-  }
+  return request({
+    method: 'DELETE',
+    url: '/app/v1_0/search/histories',
+    params: value
+  })
+}

@@ -1,30 +1,58 @@
 import Vue from 'vue'
-import { Button,Icon,tabbar,tabbarItem,NavBar,cellGroup,field,form,countDown,cell,image,grid,gridItem,tab,tabs,pullRefresh,list ,popup,search,GoodsAction, GoodsActionIcon, GoodsActionButton,loading,divider,ImagePreview,picker,datetimePicker } from 'vant';
+import {
+  Button,
+  Icon,
+  tabbar,
+  tabbarItem,
+  NavBar,
+  cellGroup,
+  field,
+  form,
+  countDown,
+  cell,
+  image,
+  grid,
+  gridItem,
+  tab,
+  tabs,
+  pullRefresh,
+  list,
+  popup,
+  search,
+  GoodsAction,
+  GoodsActionIcon,
+  GoodsActionButton,
+  loading,
+  divider,
+  ImagePreview,
+  picker,
+  datetimePicker
+} from 'vant'
 
-Vue.use(Button);
-Vue.use(Icon );
-Vue.use(tabbar );
-Vue.use(tabbarItem );
-Vue.use(NavBar);
-Vue.use(cellGroup);
-Vue.use(field);
-Vue.use(form);
-Vue.use(countDown);
-Vue.use(cell);
-Vue.use(image);
-Vue.use(grid);
-Vue.use(gridItem);
-Vue.use(tab);
-Vue.use(tabs);
-Vue.use(pullRefresh);
-Vue.use(list);
-Vue.use(popup);
-Vue.use(search);
-Vue.use(GoodsAction);
-Vue.use(GoodsActionButton);
-Vue.use(GoodsActionIcon);
-Vue.use(loading);
-Vue.use(divider);
-Vue.use(ImagePreview);
-Vue.use(picker);
-Vue.use(datetimePicker);
+Vue.use(Button)
+Vue.use(Icon)
+Vue.use(tabbar)
+Vue.use(tabbarItem)
+Vue.use(NavBar)
+Vue.use(cellGroup)
+Vue.use(field)
+Vue.use(form)
+Vue.use(countDown)
+Vue.use(cell)
+Vue.use(image)
+Vue.use(grid)
+Vue.use(gridItem)
+Vue.use(tab)
+Vue.use(tabs)
+Vue.use(pullRefresh)
+Vue.use(list)
+Vue.use(popup)
+Vue.use(search)
+Vue.use(GoodsAction)
+Vue.use(GoodsActionButton)
+Vue.use(GoodsActionIcon)
+Vue.use(loading)
+Vue.use(divider)
+Vue.use(ImagePreview)
+Vue.use(picker)
+Vue.use(datetimePicker)

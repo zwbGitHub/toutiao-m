@@ -84,7 +84,7 @@ export default {
       this.userChannels.push(channel)
       // 数据持久化
       if (this.user) {
-        // 由于后端问题无法实现持久化,请求可以成功 
+        // 由于后端问题无法实现持久化,请求可以成功
         await changeUserChannels({
           channels: [
             {

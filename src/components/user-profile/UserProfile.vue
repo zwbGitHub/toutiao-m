@@ -37,8 +37,7 @@
       @click="birthdayShow = true"
     />
     <!-- 修改头像弹出层 -->
-    <van-popup v-model="avatorShow" position="bottom" 
-    class="avator-wrap">
+    <van-popup v-model="avatorShow" position="bottom" class="avator-wrap">
       <user-avator
         :file="imgObject"
         v-if="avatorShow"
@@ -109,7 +108,7 @@ export default {
     // input 默认change事件
     iptChange() {
       this.avatorShow = true
-      // 此方法获取当前图片对象的blob信心
+      // 此方法获取当前图片对象的blob信息
       // const blob = window.URL.createObjectURL(this.$refs.file.files[0])
       // console.log(blob);
       this.imgObject = this.$refs.file.files[0]
@@ -132,9 +131,9 @@ export default {
     background-color: rgb(245, 246, 249);
     height: 100%;
   }
-  .avator-wrap{
-      height: 100%;
-      background-color: #000;
+  .avator-wrap {
+    height: 100%;
+    background-color: #000;
   }
 }
 </style>

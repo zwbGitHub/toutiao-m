@@ -75,8 +75,8 @@ export const changeUserData = data => {
 // 编辑用户照片资料
 export const editUserImages = data => {
   return request({
-    method:'patch',
-    url:'/app/v1_0/user/photo',
+    method: 'patch',
+    url: '/app/v1_0/user/photo',
     data
   })
 }

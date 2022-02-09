@@ -1,7 +1,7 @@
 <template>
   <van-button
     v-if="!isFollowed"
-    slot="default" 
+    slot="default"
     type="info"
     size="small"
     round
@@ -27,10 +27,10 @@ import { Toast } from 'vant'
 export default {
   data() {
     return {
-        loading:false,
+      loading: false
     }
   },
-  props: ['isFollowed','autId'],
+  props: ['isFollowed', 'autId'],
   methods: {
     // 用户关注事件
     async onFollow() {
@@ -44,15 +44,15 @@ export default {
           const { data } = await getUserFollow(this.autId)
           console.log(data)
         }
-        this.$emit('changeFollowed',!this.isFollowed)
+        this.$emit('changeFollowed', !this.isFollowed)
       } catch (err) {
         let message = '关注失败，请重试'
         if (err.response && err.response.status === 400) {
-          message = '用户不能关注自己' 
+          message = '用户不能关注自己'
         }
         Toast(message)
       }
-      
+
       this.loading = false
     }
   }

@@ -114,7 +114,7 @@
     </div>
     <!-- 底部写评论弹出层 -->
     <van-popup v-model="popupShow" position="bottom">
-      <comment-post :target="article.art_id" @write-comment="addComment"/>
+      <comment-post :target="article.art_id" @write-comment="addComment" />
     </van-popup>
   </div>
   <!-- 底部信息导航列表 -->

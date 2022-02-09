@@ -1,7 +1,7 @@
 <template>
   <div class="my-container">
     <!-- 拥有蓝色背景区域 -->
-    <van-cell-group class="my-info" v-if="user">
+    <van-cell-group class="my-info" v-if="!user">
       <!-- 头像昵称编辑资料区域 -->
       <van-cell center class="base-info" :border="false">
         <van-image
@@ -46,12 +46,17 @@
     </van-cell-group>
     <!-- 未登录显示蓝色区域 -->
     <van-cell-group class="my-info my-hide" v-if="!user"
-      ><div class="avator-wrap" @click="$router.push({
-        path:'/login',
-        query:{
-          redirect:'/my'
-        }
-      })">
+      ><div
+        class="avator-wrap"
+        @click="
+          $router.push({
+            path: '/login',
+            query: {
+              redirect: '/my'
+            }
+          })
+        "
+      >
         <img src="./login-avator.png" class="login-avator" />
         <div>登录/注册</div>
       </div>
@@ -108,7 +113,7 @@ export default {
         title: '提示',
         message: '确认退出吗'
       })
-        .then(async () => {
+        .then(() => {
           this.$store.commit('removeLogin')
         })
         .catch(() => {

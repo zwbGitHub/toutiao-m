@@ -46,7 +46,7 @@ export default {
         if (Math.random() > 0.5) {
           JSON.parse('dsnajndjsa')
         }
-        
+
         // 加载状态结束
         this.searchLoading = false
         // 数据全部加载完成

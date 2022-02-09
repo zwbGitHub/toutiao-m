@@ -31,7 +31,7 @@ export default {
         // 使用promise封装一下函数的返回值，然后就直接可以使用async和await进行取值
         this.cropper.getCroppedCanvas().toBlob(file => {
           resolve(file)
-          console.log(file);
+          console.log(file)
         })
       })
     },

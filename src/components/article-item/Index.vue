@@ -1,13 +1,14 @@
 <template>
-<!-- 首页文章列表单元组件 -->
-<!-- :to="`/article/${article.art_id}`" -->
-  <van-cell class="article-item" 
-  :to="{
-    name:'article',
-    params:{
-      articleId:article.art_id
-    }
-  }"
+  <!-- 首页文章列表单元组件 -->
+  <!-- :to="`/article/${article.art_id}`" -->
+  <van-cell
+    class="article-item"
+    :to="{
+      name: 'article',
+      params: {
+        articleId: article.art_id
+      }
+    }"
   >
     <div slot="title" class="title van-multi-ellipsis--l3">
       {{ article.title }}
@@ -25,7 +26,7 @@
       <div class="label-text">
         <span>{{ article.aut_name }}</span>
         <span>{{ article.comm_count }}</span>
-        <span>{{ article.pubdate | relativeTime}}</span>
+        <span>{{ article.pubdate | relativeTime }}</span>
       </div>
     </div>
     <!-- 默认插槽，可省略 -->
@@ -49,8 +50,7 @@ export default {
       require: true
     }
   },
-  methods: {
-  }
+  methods: {}
 }
 </script>
 

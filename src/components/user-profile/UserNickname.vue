@@ -51,7 +51,7 @@ export default {
         this.$emit('closePopup')
         Toast.success('修改成功')
       } catch (err) {
-          Toast.fail('修改失败')
+        Toast.fail('修改失败')
       }
     }
   }
@@ -59,8 +59,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.field-bar{
-    margin-top: 5px;
+.field-bar {
+  margin-top: 5px;
 }
-    
 </style>

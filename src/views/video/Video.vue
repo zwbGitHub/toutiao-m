@@ -1,15 +1,11 @@
 <template>
   <div>
-      视频
+    视频
   </div>
 </template>
 
 <script>
-export default {
-
-}
+export default {}
 </script>
 
-<style>
-
-</style>
+<style></style>

@@ -49,7 +49,7 @@ export default {
     const articleList = this.$refs['article-list']
     articleList.onscroll = debounce(() => {
       this.scrollTop = articleList.scrollTop
-    },50)
+    }, 50)
   },
   activated() {
     this.$refs['article-list'].scrollTop = this.scrollTop

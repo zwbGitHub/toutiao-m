@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import { Dialog } from 'vant'
-import  store  from '@/store/'
+import store from '@/store/'
 Vue.use(VueRouter)
 
 const routes = [
@@ -56,7 +56,7 @@ const routes = [
   {
     path: '/user/profile',
     name: 'user-profile',
-    meta: { isLoading: true },
+    meta: { isLoading: false },
     component: () => import('@/components/user-profile/UserProfile.vue')
   },
   // 聊天京京同学
